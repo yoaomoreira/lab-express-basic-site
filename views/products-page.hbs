@@ -1,0 +1,27 @@
+<div class="container  justify-content-evenly">
+    <h1>Nuestros Productos</h1>
+    <hr>
+    <div class="container d-flex flex-wrap  justify-content-evenly" style="max-width: 540px; background-color:black;">
+        {{#each products}}
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{thumbnail}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text"><small class="text-muted">{{price}}</small></p>
+                        <p class="card-text"><small class="text-muted">{{discountPercentage}}</small></p>
+                        <p class="card-text"><small class="text-muted">{{brand}}</small></p>
+                        <p class="card-text"><small class="text-muted">{{category}}</small></p>
+                        <p class="card-text"><small class="text-muted">{{stock}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div> <a href="/" class="btn btn-dark">Inicio</a></div>
+</div>
